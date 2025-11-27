@@ -19,7 +19,7 @@ def main():
     listener = threading.Thread(target=listen_for_messages, args=(client_socket,), daemon=True)
     listener.start()
     
-    print("Commands: /count | Ctrl+c or /exit to quit")
+    print("Commands: /count | Ctrl+c or exit to quit")
     print("This server broadcasts all messages")
     
     try:
